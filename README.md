@@ -1,27 +1,25 @@
 
-# Student Grade Calculator
+# Shopping Discount Calculator
 
-A Python program that evaluates student marks, assigns letter grades, and determines whether a student has passed or failed.
+A Python program that calculates shopping discounts, savings, and final purchase prices based on spending thresholds.
 
 ## Features
 
-- Accepts a student's score.
-- Assigns a letter grade based on score ranges.
-- Determines pass or fail status.
-- Displays the result clearly.
-- Can be extended to support multiple students.
+- Accepts a shopping subtotal.
+- Applies a discount based on the subtotal.
+- Calculates the discount amount.
+- Calculates the final price after discount.
+- Displays the results clearly.
 
-## Grading Scale
+## Discount Rules
 
-| Score | Grade |
+The example rules are:
+
+| Shopping Subtotal | Discount |
 |---|---|
-| 70–100 | A |
-| 60–69 | B |
-| 50–59 | C |
-| 40–49 | D |
-| Below 40 | F |
-
-A score of 50 or above is considered a pass.
+| 100,000 or more | 10% |
+| 50,000–99,999.99 | 5% |
+| Below 50,000 | No discount |
 
 ## Requirements
 
@@ -34,35 +32,39 @@ A score of 50 or above is considered a pass.
 3. Open a terminal in the project directory.
 4. Run the program:
 
-   `python grades.py`
+   `python discount.py`
 
-5. Enter the requested score.
+5. Enter the shopping subtotal.
 
 ## Example
 
 Input:
 
-`Score: 75`
+`Subtotal: 120000`
 
 Expected result:
 
-- Grade: A
-- Status: Pass
+- Discount rate: 10%
+- Money saved: 12,000
+- Final price: 108,000
+
+*Example amounts use generic currency units.*
 
 ## Skills Demonstrated
 
 - Variables and data types
 - User input and type conversion
+- Arithmetic operations
 - Comparison operators
 - Conditional statements
 - Formatted output
 
 ## Future Improvements
 
-- Reject scores below 0 or above 100.
-- Handle non-numeric input.
-- Calculate class averages.
-- Support multiple students.
+- Validate negative and non-numeric amounts.
+- Support multiple shopping items.
+- Display a detailed receipt.
+- Allow configurable discount rules.
 
 ## License
 
