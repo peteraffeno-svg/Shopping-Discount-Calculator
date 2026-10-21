@@ -1,16 +1,27 @@
 
-# Employee Payroll Calculator
+# Student Grade Calculator
 
-A Python program that calculates employee wages, overtime pay, tax deductions, and net pay.
+A Python program that evaluates student marks, assigns letter grades, and determines whether a student has passed or failed.
 
 ## Features
 
-- Collects employee name, hourly rate, and hours worked.
-- Calculates regular pay for up to 40 hours.
-- Calculates overtime at 1.5 times the hourly rate.
-- Deducts 10% tax from gross pay.
-- Calculates final net pay.
-- Displays payroll information in a readable format.
+- Accepts a student's score.
+- Assigns a letter grade based on score ranges.
+- Determines pass or fail status.
+- Displays the result clearly.
+- Can be extended to support multiple students.
+
+## Grading Scale
+
+| Score | Grade |
+|---|---|
+| 70–100 | A |
+| 60–69 | B |
+| 50–59 | C |
+| 40–49 | D |
+| Below 40 | F |
+
+A score of 50 or above is considered a pass.
 
 ## Requirements
 
@@ -23,35 +34,35 @@ A Python program that calculates employee wages, overtime pay, tax deductions, a
 3. Open a terminal in the project directory.
 4. Run the program:
 
-   `python payroll.py`
+   `python grades.py`
 
-5. Follow the prompts.
+5. Enter the requested score.
 
 ## Example
 
-For an employee earning 100 per hour and working 45 hours:
+Input:
 
-- Regular pay: 4,000
-- Overtime pay: 750
-- Gross pay: 4,750
-- Tax (10%): 475
-- Net pay: 4,275
+`Score: 75`
 
-*Example amounts use generic currency units.*
+Expected result:
+
+- Grade: A
+- Status: Pass
 
 ## Skills Demonstrated
 
 - Variables and data types
 - User input and type conversion
-- Arithmetic operations
+- Comparison operators
 - Conditional statements
 - Formatted output
 
 ## Future Improvements
 
-- Input validation and error handling
-- Saving payroll records to a file
-- Generating payroll reports
+- Reject scores below 0 or above 100.
+- Handle non-numeric input.
+- Calculate class averages.
+- Support multiple students.
 
 ## License
 
